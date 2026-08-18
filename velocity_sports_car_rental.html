@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Velocity Motors | Sports Car Rental</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}
+body{background:#0b0b0b;color:#fff}
+header{min-height:100vh;background:linear-gradient(#0008,#000d),url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80") center/cover;display:flex;flex-direction:column}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 7%}
+.logo{font-size:23px;font-weight:bold;letter-spacing:2px}.logo span{color:#e50914}
+nav a{color:#fff;text-decoration:none;margin-left:20px;font-size:14px}
+.hero{flex:1;display:flex;align-items:center;padding:0 7%;max-width:800px}
+.hero h1{font-size:clamp(45px,9vw,82px);line-height:.95;text-transform:uppercase}.hero h1 span{color:#e50914}
+.hero p{margin:24px 0;color:#ddd;font-size:17px;line-height:1.6}
+.btn{display:inline-block;background:#e50914;color:#fff;padding:13px 23px;border:0;border-radius:5px;text-decoration:none;font-weight:bold;cursor:pointer}
+section{padding:70px 7%}.title{text-align:center;margin-bottom:40px}.title h2{font-size:36px}.title p{color:#999;margin-top:8px}
+.cars{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.car{background:#151515;border-radius:12px;overflow:hidden}.car img{width:100%;height:205px;object-fit:cover}
+.info{padding:20px}.info h3{font-size:22px;margin-bottom:9px}.info p{color:#aaa;margin-bottom:14px}
+.price{font-size:20px;font-weight:bold;margin-bottom:17px}.price span{font-size:13px;color:#888;font-weight:normal}
+.booking{background:#111}form{max-width:600px;margin:auto;background:#191919;padding:28px;border-radius:12px}
+input,select{width:100%;padding:13px;margin-bottom:14px;background:#0c0c0c;border:1px solid #333;color:#fff;border-radius:5px}
+form .btn{width:100%}footer{text-align:center;padding:28px;background:#050505;color:#777}
+@media(max-width:600px){nav{padding:18px 20px}nav div:last-child{display:none}.hero{padding:0 20px}section{padding:55px 20px}}
+</style>
+</head>
+<body>
+<header id="home">
+<nav><div class="logo">VELOCITY<span>.</span></div><div>
+<a href="#home">Home</a><a href="#cars">Cars</a><a href="#booking">Booking</a>
+</div></nav>
+<div class="hero"><div>
+<h1>Drive Your <span>Dream</span></h1>
+<p>Experience the thrill of driving premium sports cars. Choose your dream car and enjoy an unforgettable journey.</p>
+<a href="#cars" class="btn">Explore Cars</a>
+</div></div>
+</header>
+
+<section id="cars">
+<div class="title"><h2>Our Sports Cars</h2><p>Choose your dream car and hit the road.</p></div>
+<div class="cars">
+<div class="car"><img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=900&q=80"><div class="info"><h3>Ferrari 488</h3><p>Automatic • 2 Seats • Petrol</p><div class="price">$450 <span>/ day</span></div><a href="#booking" class="btn">Rent Now</a></div></div>
+<div class="car"><img src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=900&q=80"><div class="info"><h3>Lamborghini Huracán</h3><p>Automatic • 2 Seats • Petrol</p><div class="price">$500 <span>/ day</span></div><a href="#booking" class="btn">Rent Now</a></div></div>
+<div class="car"><img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=900&q=80"><div class="info"><h3>Porsche 911</h3><p>Automatic • 2 Seats • Petrol</p><div class="price">$350 <span>/ day</span></div><a href="#booking" class="btn">Rent Now</a></div></div>
+</div>
+</section>
+
+<section class="booking" id="booking">
+<div class="title"><h2>Book Your Car</h2><p>Please make sure to book in advance before renting.</p></div>
+<form onsubmit="bookCar(event)">
+<input id="name" placeholder="Full Name" required>
+<input id="email" type="email" placeholder="Email Address" required>
+<select id="car" required><option value="">Select a Car</option><option>Ferrari 488</option><option>Lamborghini Huracán</option><option>Porsche 911</option></select>
+<input id="date" type="date" required>
+<input id="days" type="number" placeholder="Rental Days" min="1" required>
+<button class="btn" type="submit">Confirm Booking</button>
+</form>
+</section>
+
+<footer>© 2026 Velocity Motors • Premium Sports Car Rental</footer>
+<script>
+function bookCar(e){
+ e.preventDefault();
+ alert("Booking Request Sent!\\n\\nName: "+document.getElementById("name").value+
+ "\\nCar: "+document.getElementById("car").value+
+ "\\nStart Date: "+document.getElementById("date").value+
+ "\\nRental Days: "+document.getElementById("days").value);
+}
+</script>
+</body>
+</html>
