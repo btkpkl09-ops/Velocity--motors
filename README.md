@@ -2,6 +2,8 @@
 <section class="how-to-book">
   <div class="title">
     <h2>How to Book</h2>
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN8uRxjGDTD-n34J5rOEIFfWaci4ZcqhbhcAqsXtxeZ1CAMoeuj9sihXdb&s=10>
     <p>Book your dream sports car in just a few easy steps.</p>
   </div>
 
