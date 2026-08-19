@@ -2,7 +2,12 @@
 <section class="how-to-book">
   <div class="title">
     <h2>How to Book</h2>
-    
+    header {
+  min-height: 100vh;
+  background:jpg:
+    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.85)),
+    url("...");
+}
       
     <p>Book your dream sports car in just a few easy steps.</p>
   </div>
