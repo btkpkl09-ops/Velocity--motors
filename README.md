@@ -2,7 +2,7 @@
 <section class="how-to-book">
   <div class="title">
     <h2>How to Book</h2>
-    <kontol></kontol>
+    
       
     <p>Book your dream sports car in just a few easy steps.</p>
   </div>
